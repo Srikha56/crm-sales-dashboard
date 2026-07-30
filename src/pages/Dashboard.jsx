@@ -1,9 +1,9 @@
-import Card from "../components/common/Card";
-import RevenueChart from "../components/charts/RevenueChart";
-import RecentCustomers from "../components/table/RecentCustomers";
-import LeadsChart from "../components/charts/LeadsChart";
-import SalesChart from "../components/charts/SalesChart";
-import RecentActivities from "../components/table/RecentActivities";
+import Card from "../Components/common/Card";
+import RevenueChart from "../Components/charts/RevenueChart";
+import RecentCustomers from "../Components/table/RecentCustomers";
+import LeadsChart from "../Components/charts/LeadsChart";
+import SalesChart from "../Components/charts/SalesChart";
+import RecentActivities from "../Components/table/RecentActivities";
 function Dashboard() {
   return (
     <div className="space-y-8">

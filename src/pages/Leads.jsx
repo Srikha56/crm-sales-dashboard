@@ -1,5 +1,5 @@
-import LeadTable from "../components/table/LeadTable";
-import LeadForm from "../components/forms/LeadForm";
+import LeadTable from "../Components/table/LeadTable";
+import LeadForm from "../Components/forms/LeadForm";
 import { useEffect,useState } from "react";
 const Leads = () => {
   const [leads, setLeads] = useState([]);

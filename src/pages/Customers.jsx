@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import CustomerForm from "../components/forms/CustomerForm";
-import CustomerTable from "../components/table/CustomerTable";
+import CustomerForm from "../Components/forms/CustomerForm";
+import CustomerTable from "../Components/table/CustomerTable";
 
 const Customers = () => {
   const [customers, setCustomers] = useState([]);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import DealForm from "../components/forms/DealForm";
+import DealForm from "../Components/forms/DealForm";
 import DealsTable from "../Components/table/DealsTable";
 
 const Deals = () => {

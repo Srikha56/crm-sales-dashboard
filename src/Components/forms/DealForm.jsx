@@ -9,7 +9,7 @@ const DealForm = ({ fetchDeals, editingDeal, setEditingDeal }) => {
     status:"Open",
   });
 
-  useEffect(() => {
+  useEffect(() => {  
     if (editingDeal) {
       setFormData({
         ...editingDeal,
