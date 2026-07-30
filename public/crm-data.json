@@ -1,0 +1,118 @@
+{
+  "leads": [
+    {
+      "name": "John Smith",
+      "company": "Google",
+      "email": "john1234@gmail.com",
+      "status": "New",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Emma Watson",
+      "company": "Microsoft",
+      "email": "emma@gmail.com",
+      "status": "Contacted"
+    },
+    {
+      "id": "3",
+      "name": "David Miller",
+      "company": "Amazon",
+      "email": "david@gmail.com",
+      "status": "Qualified"
+    },
+    {
+      "id": "4",
+      "name": "Sophia Lee",
+      "company": "Netflix",
+      "email": "sophia@gmail.com",
+      "status": "Proposal"
+    },
+    {
+      "name": "stephen",
+      "company": "microsoft",
+      "email": "tyzee@gmail.com",
+      "status": "Proposal",
+      "id": "jiyTY7DiESE"
+    },
+    {
+      "name": "Sophia Lee",
+      "company": "Netflix",
+      "email": "sophia@gmail.com",
+      "status": "Qualified",
+      "id": "hFS2eRXmdb4"
+    }
+  ],
+  "deals": [
+    {
+      "id": "1",
+      "dealName": "Website Development",
+      "customer": "Arun Tech",
+      "amount": "40000",
+      "stage": "Negotiation",
+      "status": "Open",
+      "createdAt": "2026-07-19",
+      "client": "amazon"
+    },
+    {
+      "id": "2",
+      "dealName": "Mobile App Project",
+      "customer": "ABC Solutions",
+      "amount": 80000,
+      "stage": "Won",
+      "status": "Closed",
+      "client": "amazon"
+    },
+    {
+      "dealName": "Website development",
+      "client": "Siva Technology",
+      "amount": "700000",
+      "stage": "Negotiation",
+      "id": "NrZ4QI0dYFI",
+      "status": "Closed"
+    },
+    {
+      "dealName": "Website Development",
+      "client": "amazon",
+      "amount": "50000",
+      "stage": "Won",
+      "id": "AdRg3eoITN4",
+      "status": "Open"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Srikha",
+      "company": "ABC Pvt lmtd",
+      "email": "rac123@gmail.com",
+      "phone": "9874563210"
+    },
+    {
+      "name": "Magathi",
+      "company": "Microsoft",
+      "email": "Magathi23@gmail.com",
+      "phone": "9638527410",
+      "id": "JLs66Nyi_Rs"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Follow up with Amazon",
+      "assignedTo": "Srikha",
+      "dueDate": "2026-01-06",
+      "priority": "High",
+      "status": "Pending"
+    },
+    {
+      "title": "Follow up with Microsift",
+      "assignedTo": "John",
+      "dueDate": "2026-01-30",
+      "priority": "High",
+      "status": "In Progress",
+      "id": "XS1QlM_qapk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
