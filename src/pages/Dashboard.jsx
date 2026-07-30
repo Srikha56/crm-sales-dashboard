@@ -1,4 +1,4 @@
-import Card from "../Components/common/Card";
+import Card from "../Components/Common/Card";
 import RevenueChart from "../Components/charts/RevenueChart";
 import RecentCustomers from "../Components/table/RecentCustomers";
 import LeadsChart from "../Components/charts/LeadsChart";
