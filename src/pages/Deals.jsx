@@ -8,7 +8,7 @@ const Deals = () => {
 
   const fetchDeals = async () => {
     try {
-      const res = await fetch("http://localhost:3000/deals");
+      const res = await fetch("https://crm-sales-dashboard-backend.onrender.com/deals");
       const data = await res.json();
       setDeals(data);
     } catch (error) {
@@ -31,7 +31,7 @@ const Deals = () => {
 
     if (!confirmDelete) return;
 
-    await fetch(`http://localhost:3000/deals/${id}`, {
+    await fetch(`https://crm-sales-dashboard-backend.onrender.com/deals/${id}`, {
       method: "DELETE",
     });
 

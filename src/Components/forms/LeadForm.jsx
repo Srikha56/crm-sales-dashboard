@@ -31,7 +31,7 @@ const LeadForm = ({fetchLeads,editingLead,setEditingLead}) => {
   try {
     if (editingLead) {
       // Update existing lead
-      await fetch(`http://localhost:3000/leads/${editingLead.id}`, {
+      await fetch(`https://crm-sales-dashboard-backend.onrender.com/leads/${editingLead.id}`, {
         method: "PUT", // அல்லது PATCH
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const LeadForm = ({fetchLeads,editingLead,setEditingLead}) => {
       setEditingLead(null);
     } else {
       // Create new lead
-      await fetch("http://localhost:3000/leads", {
+      await fetch("https://crm-sales-dashboard-backend.onrender.com/leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

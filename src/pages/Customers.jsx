@@ -7,7 +7,7 @@ const Customers = () => {
   const [editingCustomer, setEditingCustomer] = useState(null);
 
   const fetchCustomers = async () => {
-    const res = await fetch("http://localhost:3000/customers");
+    const res = await fetch("https://crm-sales-dashboard-backend.onrender.com/customers");
     const data = await res.json();
     setCustomers(data);
   };
@@ -17,7 +17,7 @@ const Customers = () => {
   }, []);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:3000/customers/${id}`, {
+    await fetch(`https://crm-sales-dashboard-backend.onrender.com/${id}`, {
       method: "DELETE",
     });
 

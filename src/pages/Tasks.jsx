@@ -7,7 +7,7 @@ const Tasks = () => {
   const [editingTask, setEditingTask] = useState(null);
 
   const fetchTasks = async () => {
-    const res = await fetch("http://localhost:3000/tasks");
+    const res = await fetch("https://crm-sales-dashboard-backend.onrender.com/tasks");
     const data = await res.json();
     setTasks(data);
   };
@@ -17,7 +17,7 @@ const Tasks = () => {
   }, []);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:3000/tasks/${id}`, {
+    await fetch(`https://crm-sales-dashboard-backend.onrender.com/tasks/${id}`, {
       method: "DELETE",
     });
 

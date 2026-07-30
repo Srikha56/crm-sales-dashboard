@@ -30,7 +30,7 @@ const DealForm = ({ fetchDeals, editingDeal, setEditingDeal }) => {
 
     try {
       if (editingDeal) {
-        await fetch(`http://localhost:3000/deals/${editingDeal.id}`, {
+        await fetch(`https://crm-sales-dashboard-backend.onrender.com/deals/${editingDeal.id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const DealForm = ({ fetchDeals, editingDeal, setEditingDeal }) => {
 
         setEditingDeal(null);
       } else {
-        await fetch("http://localhost:3000/deals", {
+        await fetch("https://crm-sales-dashboard-backend.onrender.com/deals", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

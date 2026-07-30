@@ -29,7 +29,7 @@ const CustomerForm = ({
     e.preventDefault();
 
     if (editingCustomer) {
-      await fetch(`http://localhost:3000/customers/${editingCustomer.id}`, {
+      await fetch(`https://crm-sales-dashboard-backend.onrender.com/customers/${editingCustomer.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -42,7 +42,7 @@ const CustomerForm = ({
 
       setEditingCustomer(null);
     } else {
-      await fetch("http://localhost:3000/customers", {
+      await fetch("https://crm-sales-dashboard-backend.onrender.com/customers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

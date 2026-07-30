@@ -7,8 +7,8 @@ const [deals, setDeals] = useState([]);
 
 const fetchReportsData = async () => {
   try {
-    const leadsRes = await fetch("http://localhost:3000/leads");
-    const dealsRes = await fetch("http://localhost:3000/deals");
+    const leadsRes = await fetch("https://crm-sales-dashboard-backend.onrender.com/leads");
+    const dealsRes = await fetch("https://crm-sales-dashboard-backend.onrender.com/deals");
 
     const leadsData = await leadsRes.json();
     const dealsData = await dealsRes.json();

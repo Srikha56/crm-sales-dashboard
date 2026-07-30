@@ -8,7 +8,7 @@ const Leads = () => {
   const[statusFilter,setStatusFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const fetchLeads = async () => {
-    const res = await fetch("http://localhost:3000/leads");
+    const res = await fetch("https://crm-sales-dashboard-backend.onrender.com/leads");
     const data = await res.json();
     setLeads(data);
   };
@@ -42,7 +42,7 @@ const handleDeleteLead = async (id) => {
 
   if (!confirmDelete) return;
 
-  await fetch(`http://localhost:3000/leads/${id}`, {
+  await fetch(`https://crm-sales-dashboard-backend.onrender.com/leads/${id}`, {
     method: "DELETE",
   });
 

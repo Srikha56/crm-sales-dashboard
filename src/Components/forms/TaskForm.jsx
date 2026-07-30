@@ -26,7 +26,7 @@ const TaskForm = ({ fetchTasks, editingTask, setEditingTask }) => {
     e.preventDefault();
 
     if (editingTask) {
-      await fetch(`http://localhost:3000/tasks/${editingTask.id}`, {
+      await fetch(`https://crm-sales-dashboard-backend.onrender.com/tasks/${editingTask.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const TaskForm = ({ fetchTasks, editingTask, setEditingTask }) => {
 
       setEditingTask(null);
     } else {
-      await fetch("http://localhost:3000/tasks", {
+      await fetch("https://crm-sales-dashboard-backend.onrender.com/tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
